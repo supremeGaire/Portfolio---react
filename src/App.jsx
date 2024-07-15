@@ -1,15 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react';
 import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+import Career from './components/Career';
+import Portfolio from './components/Portfolio';
+import ContactMe from './components/ContactMe';
 
 const App = () => {
   return (
     <>
       <Header />
-      <h1>This is the main content of the portfolio.</h1>
+      <AboutMe />
+      <Career />
+      <Portfolio />
+      <ContactMe />
     </>
   )
 }
@@ -43,4 +48,4 @@ const App = () => {
 //   )
 // }
 
-export default App
+export default App;
