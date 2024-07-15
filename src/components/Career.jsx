@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Career.css";
 
 const Career = () => {
     return (
