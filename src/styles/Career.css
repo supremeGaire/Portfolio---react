@@ -1,0 +1,27 @@
+.career {
+    padding: 40px;
+    text-align: center;
+}
+
+.career h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+}
+
+.timeline span {
+    display: block;
+    font-weight: bold;
+}
+
+.timeline p {
+    font-size: 1.2em;
+}
