@@ -5,7 +5,6 @@
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-optical-sizing: auto;
-  line-height: 1.5;
 
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -202,6 +201,87 @@ button:focus-visible {
   z-index: 0;
 }
 
-#about span{
+.dot{
   color: var(--main);
+}
+
+
+/* Skills CSS */
+#skills {
+  margin-top: -3rem;
+}
+
+.skills-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.skill-icons {
+  display: flex;
+  animation: marquee 20s linear infinite reverse;
+}
+
+.skill-icon {
+  flex: 0 0 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  color: #4A5568;
+  cursor: pointer;
+}
+.skill-icon:hover{
+  color: var(--main);
+}
+
+.skill-icon p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+/* Keyframes for the moveIcons animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+.blur-left,
+.blur-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.blur-left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.blur-right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.skill-line-base{
+  width: 80%;
+  height: 9px;
+  background-color: #c2c8d3;
+}
+.skill-line,
+.skill-line-2{
+  width: 60%;
+  height: 9px;
+  background-color: var(--dark);
+}
+.skill-line-2{
+  width: 75%;
 }

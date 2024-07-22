@@ -28,7 +28,10 @@ const Hero = () => {
     <section className="w-10/12 m-auto flex justify-between items-start pt-20 relative z-10">
 
       <div className="intro flex flex-col justify-between">
+        <div>
         <h1 className="text-4xl font-bold">Hello, I’m<br /><span className='text-8xl font-extrabold'>Supreme <br /> Gaire</span></h1>
+        {/* <p>.............................................................</p> */}
+        </div>
         <div>
           <p className='text-slate-400'>Check out my qualifications...</p>
           <a href="../assets/resume.pdf" download="Supreme_Gaire_Resume.pdf" className="download-btn text-lg font-bold relative text-white py-2 px-4 mt-2 rounded-full inline-flex space-x-4 items-center cursor-pointer">
