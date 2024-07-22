@@ -4,7 +4,7 @@ import helloImage from "../assets/hello.png";
 
 const AboutMe = () => {
     return (
-        <section id="about" className="pt-64 pb-10">
+        <section id="about" className="pt-72 pb-10">
             <div className="w-10/12 m-auto">
                 <h2 className="text-6xl font-bold mb-10 text-white">about me<span>.</span></h2>
                 <div className="flex space-x-20 items-center">

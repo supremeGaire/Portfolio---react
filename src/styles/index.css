@@ -118,6 +118,7 @@ button:focus-visible {
 .download-btn{
   background-color: var(--main);
   color: var(--dark);
+  transform: translateX(-100px);
 }
 
 .circle-arrow,
@@ -157,10 +158,38 @@ button:focus-visible {
 .hero-image img{
   width: 450px;
   height: 450px;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+
+.hero-image img.fade-out {
+  opacity: 0;
 }
 
 .hero-image{
   border: 6px solid var(--dark);
+}
+
+.hero-image button:nth-child(2){
+  left: -10rem;
+}
+.hero-image button:nth-child(3){
+  right: -4rem;
+}
+
+.social-media-icons i{
+  background-color: var(--dark);
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.social-media-icons i:hover{
+  background-color: var(--main);
+  translate: 0 -5px;
 }
 
 
@@ -169,7 +198,7 @@ button:focus-visible {
   background-color: var(--dark);
   border-radius: 45px;
   position: relative;
-  top: -9rem;
+  top: -10rem;
   z-index: 0;
 }
 

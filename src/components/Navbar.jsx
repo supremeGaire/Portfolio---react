@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <header id="home" className="flex justify-between items-center py-8 w-10/12 m-auto text-xl font-bold">
             <div className="logo flex items-center ml-2 font-bold">
-                {/* <img src="/path/to/logo.png" alt="Logo" className="h-8" /> */}
+                 {/* <img src="/path/to/logo.png" alt="Logo" className="h-8" /> */}
                 Supreme<span>Gaire</span>
             </div>
             <nav className="navbar">
@@ -16,7 +16,7 @@ const Navbar = () => {
                     <li><a href="#portfolio" className=" ">Portfolio</a></li>
                 </ul>
             </nav>
-            <button className="contact-btn relative text-white text-lg py-2 px-4 rounded-full flex justify-between items-center cursor-pointer">
+            <button className="contact-btn relative text-white text-lg py-2 px-4 rounded-full flex space-x-4 items-center cursor-pointer">
                 <div>Contact Me</div>
                 <div className="circle-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </button>
