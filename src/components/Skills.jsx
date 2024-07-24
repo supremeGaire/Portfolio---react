@@ -2,6 +2,9 @@ import React from 'react';
 import photoshopIcon from '../assets/photoshop.svg';
 import illustratorIcon from '../assets/illustrator.svg';
 import tailwindIcon from '../assets/tailwind.svg';
+import typeScriptIcon from '../assets/typescript.svg';
+import nextjsIcon from '../assets/nextjs.svg';
+
 const Skills = () => {
   return (
     <section id="skills" className="w-10/12 m-auto pb-8">
@@ -21,8 +24,16 @@ const Skills = () => {
             <p className="text-center mt-2">JavaScript</p>
           </div>
           <div className="skill-icon">
+          <img src={typeScriptIcon} alt="TypeScript" className="h-16 w-16" />
+            <p className="text-center mt-2">TypeScript</p>
+          </div>
+          <div className="skill-icon">
             <i className="fab fa-react fa-4x"></i>
             <p className="text-center mt-2">React</p>
+          </div>
+          <div className="skill-icon">
+          <img src={nextjsIcon} alt="NextJS" className="h-16 w-16" />
+            <p className="text-center mt-2">Next.js</p>
           </div>
           <div className="skill-icon">
             <i className="fab fa-git-alt fa-4x"></i>
@@ -47,6 +58,10 @@ const Skills = () => {
           <div className="skill-icon">
             <img src={illustratorIcon} alt="Adobe Photoshop" className="h-16 w-16" />
             <p className="text-center mt-2">Adobe Illustrator</p>
+          </div>
+          <div className="skill-icon">
+            <i className="fab fa-figma fa-4x"></i>
+            <p className="text-center mt-2">Figma</p>
           </div>
 
           {/* Repeat the icons to ensure smooth transition */}
@@ -63,8 +78,16 @@ const Skills = () => {
             <p className="text-center mt-2">JavaScript</p>
           </div>
           <div className="skill-icon">
+          <img src={typeScriptIcon} alt="TypeScript" className="h-16 w-16" />
+            <p className="text-center mt-2">TypeScript</p>
+          </div>
+          <div className="skill-icon">
             <i className="fab fa-react fa-4x"></i>
             <p className="text-center mt-2">React</p>
+          </div>
+          <div className="skill-icon">
+          <img src={nextjsIcon} alt="NextJS" className="h-16 w-16" />
+            <p className="text-center mt-2">Next.js</p>
           </div>
           <div className="skill-icon">
             <i className="fab fa-git-alt fa-4x"></i>
@@ -89,6 +112,10 @@ const Skills = () => {
           <div className="skill-icon">
             <img src={illustratorIcon} alt="Adobe Photoshop" className="h-16 w-16" />
             <p className="text-center mt-2">Adobe Illustrator</p>
+          </div>
+          <div className="skill-icon">
+            <i className="fab fa-figma fa-4x"></i>
+            <p className="text-center mt-2">Figma</p>
           </div>
         </div>
         
