@@ -277,14 +277,18 @@ button:focus-visible {
   height: 9px;
   background-color: #c2c8d3;
 }
-.skill-line,
-.skill-line-2{
-  width: 60%;
+.skill-line-fd,
+.skill-line-gd,
+.skill-line-ud{
+  width: 75%;
   height: 9px;
   background-color: var(--dark);
 }
-.skill-line-2{
-  width: 75%;
+.skill-line-gd{
+  width: 68%;
+}
+.skill-line-ud{
+  width: 70%;
 }
 
 
@@ -347,4 +351,24 @@ button:focus-visible {
 .project-image:hover .project-btn {
   bottom: 15px;
   opacity: 1;
+}
+
+
+/* Contact CSS */
+.contact-form input,
+.contact-form textarea {
+  border-radius: 40px;
+}
+
+.send-btn{
+  background-color: var(--main);
+}
+.send-btn:hover{
+  background-color: var(--hover);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--main);
+    box-shadow: 0 0 0 2px var(--main);
 }

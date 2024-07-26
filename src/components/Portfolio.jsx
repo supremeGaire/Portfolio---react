@@ -13,10 +13,11 @@ const projects = [
     {
         id: 2,
         title: "02",
-        name: "Project Name",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        image: "Name",
-        imageDesc: "A different app",
+        name: "Rentall",
+        description: "Rentall is a car renting web application. ",
+        image: "Rentall",
+        imageDesc: "A car renting app",
+        link: "https://carrentall.vercel.app/",
     },
     {
         id: 3,
@@ -71,7 +72,7 @@ const Portfolio = () => {
                                     <h2 className="text-2xl font-bold">{project.image}</h2>
                                     <p>{project.imageDesc}</p>
                                     <button className="project-btn text-white py-2 px-3 rounded-full flex items-center justify-center cursor-pointer">
-                                        <a href="#">View Project</a>
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
                                         <div className="circle-arrow ml-1 h-4 w-4">
                                             <i className="fa-solid fa-arrow-right text-sm"></i>
                                         </div>

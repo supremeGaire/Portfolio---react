@@ -125,12 +125,18 @@ const Skills = () => {
 
       <h2 className='text-2xl font-bold mt-10'>Front End Development</h2>
       <div className="skill-line-base mt-2 rounded-full">
-        <div className="skill-line rounded-full"></div>
+        <div className="skill-line-fd rounded-full"></div>
       </div>
       <h2 className='text-2xl font-bold mt-8'>Graphic Design</h2>
       <div className="skill-line-base mt-2 rounded-full">
-        <div className="skill-line-2 rounded-full"></div>
+        <div className="skill-line-gd rounded-full"></div>
       </div>
+      <h2 className='text-2xl font-bold mt-8'>UI/UX Design</h2>
+      <div className="skill-line-base mt-2 rounded-full">
+        <div className="skill-line-ud rounded-full"></div>
+      </div>
+
+      <p className="text-slate-600 mt-10 italic text-lg">I am always looking to learn more and improve my skills.</p>
     </section>
   );
 };
