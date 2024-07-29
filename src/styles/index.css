@@ -379,3 +379,19 @@ button:focus-visible {
   right: 70%;
   width: 250px;
 }
+
+
+/* Footer CSS */
+#footer{
+  background-color: var(--dark);
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.magic:hover p{
+  color: var(--main);
+}
+
+.magic-move{
+  transform: scale(1.1);
+}

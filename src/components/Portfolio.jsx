@@ -18,6 +18,7 @@ const projects = [
         description: "A simple to-do list app, where users can add, edit, delete tasks and also sort them.",
         image: "ToDos",
         imageDesc: "A to-do list app",
+        link: "https://todoapp.vercel.com",
     },
     {
         id: 3,
@@ -26,6 +27,7 @@ const projects = [
         description: "A resume generator app, where users can fill their information and generate a resume by choosing among various templates and download them in PDF format.",
         image: "Resume Generator",
         imageDesc: "A resume generator app",
+        link: "https://resumegenerator.vercel.com",
     },
 ];
 
