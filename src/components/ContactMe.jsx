@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/index.css";
 import wavingHello from "../assets/waving.png";
+import arrow from "../assets/arrow.png";
 
 const ContactMe = () => {
     return (
@@ -17,11 +18,14 @@ const ContactMe = () => {
                     <button type="submit" className="send-btn text-white py-3 px-12 rounded-full">Send</button>
                 </form>
 
-                <div className="flex flex-col items-start justify-between ml-40">
+                <div className="flex flex-col items-start justify-between relative">
                     <h2 className="text-3xl"><span className="font-bold">Need Help?</span> <br />
                     I'm just a <span className="font-bold">mail</span> away.
                     </h2>
-                    <img src={wavingHello} alt="Supreme" className="w-56 transform scale-x-[-1]" />
+                    <div className="arrow rotate-180">
+                        <img src={arrow} alt="arrow" />
+                    </div>
+                    <img src={wavingHello} alt="Supreme" className="w-60 transform scale-x-[-1]" />
                 </div>
             </div>
         </section>

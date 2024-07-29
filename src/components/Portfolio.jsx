@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/index.css";
 
 const projects = [
     {
         id: 1,
         title: "01",
-        name: "NexNote",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        image: "NexNote",
-        imageDesc: "A note taking app",
-    },
-    {
-        id: 2,
-        title: "02",
         name: "Rentall",
-        description: "Rentall is a car renting web application. ",
+        description: "Rentall is a car renting web application for users to rent cars online in an easy way.",
         image: "Rentall",
         imageDesc: "A car renting app",
         link: "https://carrentall.vercel.app/",
     },
     {
+        id: 2,
+        title: "02",
+        name: "ToDos",
+        description: "A simple to-do list app, where users can add, edit, delete tasks and also sort them.",
+        image: "ToDos",
+        imageDesc: "A to-do list app",
+    },
+    {
         id: 3,
         title: "03",
-        name: "Another Project",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        image: "Name",
-        imageDesc: "App description",
+        name: "Resume Generator",
+        description: "A resume generator app, where users can fill their information and generate a resume by choosing among various templates and download them in PDF format.",
+        image: "Resume Generator",
+        imageDesc: "A resume generator app",
     },
-   
 ];
 
 const Portfolio = () => {
@@ -40,6 +39,23 @@ const Portfolio = () => {
     const handlePrev = () => {
         setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
     };
+
+    const handleKeyPress = (event) => {
+        if (event.key === "ArrowRight") {
+            handleNext();
+        } else if (event.key === "ArrowLeft") {
+            handlePrev();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener("keydown", handleKeyPress);
+
+        // Cleanup event listener on component unmount
+        return () => {
+            document.removeEventListener("keydown", handleKeyPress);
+        };
+    }, []);
 
     const project = projects[currentProject];
 
@@ -68,15 +84,17 @@ const Portfolio = () => {
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className="project-image w-48 h-48 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden">
+                                <div className="project-image min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden">
                                     <h2 className="text-2xl font-bold">{project.image}</h2>
                                     <p>{project.imageDesc}</p>
-                                    <button className="project-btn text-white py-2 px-3 rounded-full flex items-center justify-center cursor-pointer">
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                                        <div className="circle-arrow ml-1 h-4 w-4">
-                                            <i className="fa-solid fa-arrow-right text-sm"></i>
-                                        </div>
-                                    </button>
+                                    {project.link && (
+                                        <button className="project-btn text-white py-2 px-3 rounded-full flex items-center justify-center cursor-pointer">
+                                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                                            <div className="circle-arrow ml-1 h-4 w-4">
+                                                <i className="fa-solid fa-arrow-right text-sm"></i>
+                                            </div>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>
