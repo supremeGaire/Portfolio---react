@@ -86,7 +86,7 @@ const Portfolio = () => {
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className="project-image min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden">
+                                <div className="project-image min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden rounded-md">
                                     <h2 className="text-2xl font-bold">{project.image}</h2>
                                     <p>{project.imageDesc}</p>
                                     {project.link && (

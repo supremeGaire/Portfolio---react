@@ -9,7 +9,7 @@ import Career from './components/Career';
 import Portfolio from './components/Portfolio';
 import Designs from './components/Designs';
 import ContactMe from './components/ContactMe';
-import Footer from './components/Footer';
+import Footer from '@components/Footer';
 
 const App = () => {
   return (

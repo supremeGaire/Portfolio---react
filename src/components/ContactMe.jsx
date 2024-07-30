@@ -5,7 +5,7 @@ import arrow from "../assets/arrow.png";
 
 const ContactMe = () => {
     return (
-        <section id="contact" className="my-14 w-10/12 m-auto">
+        <section id="contact" className="py-4 mt-18 mb-10 w-10/12 m-auto">
             <h2 className="text-6xl font-bold my-10">
                 contact<span className="dot">.</span>
             </h2>

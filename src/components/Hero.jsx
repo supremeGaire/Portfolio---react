@@ -45,12 +45,12 @@ const Hero = () => {
         <img src={images[currentImageIndex]} alt="Supreme" className={`object-cover ${fade ? 'fade-out' : ''}`} />
         <button className="contact-btn absolute top-56 text-white text-xl rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
           <div className="circle-arrow"></div>
-          <div className="text-white py-2 px-4 rounded-full">Front End Developer</div>
+          <a href="#portfolio" className="text-white py-2 px-4 rounded-full">Front End Developer</a>
         </button>
 
         <button className="contact-btn absolute top-10 text-white text-xl rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
           <div className="circle-arrow"></div>
-          <div className=" text-white py-2 px-4 rounded-full">Graphic Designer</div>
+          <a href="#designs" className=" text-white py-2 px-4 rounded-full">Graphic Designer</a>
         </button>
 
         <div className="social-media-icons absolute right-3 bottom-2 text-white text-xl flex space-x-2">

@@ -30,7 +30,7 @@ const Designs = () => {
   };
 
   return (
-    <section id="designs" className="my-14 w-10/12 m-auto">
+    <section id="designs" className="my-10 py-4 w-10/12 m-auto">
       <h2 className="text-6xl font-bold mb-10 text-right">
         design<span className="dot">.</span>
       </h2>

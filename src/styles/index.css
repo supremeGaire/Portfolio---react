@@ -220,7 +220,7 @@ button:focus-visible {
 
 .skill-icons {
   display: flex;
-  animation: marquee 20s linear infinite reverse;
+  animation: marquee 15s linear infinite reverse;
 }
 
 .skill-icon {

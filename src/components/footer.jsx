@@ -19,11 +19,11 @@ const Footer = () => {
                 <div className="flex justify-between items-center text-xl">
                     <div className="text-white flex space-x-2">
                         <i class="fa-solid fa-phone text-xl"></i>
-                        <p>+977 9806737450</p>
+                        <p>+977 98xxxxxxxx</p>
                     </div>
                     <div className="text-white flex space-x-2">
                         <i class="fa-solid fa-envelope text-xl"></i>
-                        <p>supremegaire57@gmail.com</p>
+                        <p>supremegaire58@gmail.com</p>
                     </div>
                     <div className="social-media-icons text-white text-xl flex space-x-2">
                         <a href="https://facebook.com/superme.gaire.1/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <p className="magic-text text-slate-400 italic">{magicText}</p>
                 </div>
                 <div className="mt-12 text-center">
-                    <p className="text-slate-400">Copyright &copy; 2024 Supreme Gaire. All rights reserved.</p>
+                    <p className="text-slate-400">Copyright &copy; 2024 <a href="#home" className="hover:text-sky-500">Supreme Gaire</a>. All rights reserved.</p>
                 </div>
             </div>
         </section>
