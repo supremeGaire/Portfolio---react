@@ -6,12 +6,12 @@ import hello from "../assets/hello.png";
 
 const Designs = () => {
   const designImages = [
-    { id: 1, src: img1, alt: "Design 1" },
-    { id: 2, src: img2, alt: "Design 2" },
-    { id: 3, src: img3, alt: "Design 3" },
-    { id: 4, src: hello, alt: "Design 4" },
-    { id: 5, src: img3, alt: "Design 5" },
-    { id: 6, src: img2, alt: "Design 6" },
+    { id: 1, src: img1, alt: "Design 1", description: "A sleek modern design showcasing minimalist aesthetics." },
+    { id: 2, src: img2, alt: "Design 2", description: "Vibrant color palette for an energizing visual experience." },
+    { id: 3, src: img3, alt: "Design 3", description: "Sophisticated design with a focus on typography and layout." },
+    { id: 4, src: hello, alt: "Design 4", description: "Whimsical and playful design with creative elements." },
+    { id: 5, src: img3, alt: "Design 5", description: "Bold and dynamic design capturing attention." },
+    { id: 6, src: img2, alt: "Design 6", description: "Elegant design with a touch of luxury and class." },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,7 +49,9 @@ const Designs = () => {
               className="absolute inset-0 bg-black bg-opacity-45 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300 cursor-pointer"
               onClick={() => openModal(image)}
             >
-              <span className="text-white text-xl font-bold">View Design</span>
+              <span className="text-white text-xl font-bold text-center px-4">
+                {image.description}
+              </span>
             </div>
           </div>
         ))}
