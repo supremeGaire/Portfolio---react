@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import img1 from "../assets/img1.jpeg";
-import img2 from "../assets/img2.jpeg";
-import img3 from "../assets/img3.jpeg";
-import hello from "../assets/hello.png";
+import design1 from "../assets/gham chaya.png";
+import design2 from "../assets/movie poster.jpg";
+import design3 from "../assets/turtle-summer poster.jpg";
+import design4 from "../assets/tea package design.jpg";
+import design5 from "../assets/logo design.jpg";
+import design6 from "../assets/karma.jpg";
+
 
 const Designs = () => {
   const designImages = [
-    { id: 1, src: img1, alt: "Design 1", description: "A sleek modern design showcasing minimalist aesthetics." },
-    { id: 2, src: img2, alt: "Design 2", description: "Vibrant color palette for an energizing visual experience." },
-    { id: 3, src: img3, alt: "Design 3", description: "Sophisticated design with a focus on typography and layout." },
-    { id: 4, src: hello, alt: "Design 4", description: "Whimsical and playful design with creative elements." },
-    { id: 5, src: img3, alt: "Design 5", description: "Bold and dynamic design capturing attention." },
-    { id: 6, src: img2, alt: "Design 6", description: "Elegant design with a touch of luxury and class." },
+    { id: 1, src: design1, alt: "Design 1", description: "Photo manipulation 01 (For youtube thumbnail)" },
+    { id: 2, src: design2, alt: "Design 2", description: "A movie poster" },
+    { id: 3, src: design3, alt: "Design 3", description: "Photo manipulation 02" },
+    { id: 4, src: design4, alt: "Design 4", description: "A simple Packet Design" },
+    { id: 5, src: design5, alt: "Design 5", description: "Some Logo Designs" },
+    { id: 6, src: design6, alt: "Design 6", description: "Branding for a Japanese restaurant" },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
