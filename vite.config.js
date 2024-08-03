@@ -9,4 +9,8 @@ export default defineConfig({
       // '@components': './components',
     },
   },
+  // server: {
+  //   host: '192.168.1.72',  // Listen on all network interfaces
+  //   port: 1010,   
+  // },
 })

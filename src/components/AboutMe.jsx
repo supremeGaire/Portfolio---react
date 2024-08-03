@@ -6,7 +6,6 @@ const AboutMe = () => {
 
     const quotes = [
         "Stay curious, keep learning, and embrace change",
-        "The best error message is the one that never shows up.",
         "Experience is the name everyone gives to their mistakes."
     ];
 

@@ -5,6 +5,7 @@ import design3 from "../assets/turtle-summer poster.jpg";
 import design4 from "../assets/tea package design.jpg";
 import design5 from "../assets/logo design.jpg";
 import design6 from "../assets/karma.jpg";
+import design7 from "../assets/icecream advertisement.png";
 
 
 const Designs = () => {
@@ -15,6 +16,7 @@ const Designs = () => {
     { id: 4, src: design4, alt: "Design 4", description: "A simple Packet Design" },
     { id: 5, src: design5, alt: "Design 5", description: "Some Logo Designs" },
     { id: 6, src: design6, alt: "Design 6", description: "Branding for a Japanese restaurant" },
+    { id: 7, src: design7, alt: "Design 7", description: "Icream advertisement Design" },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);

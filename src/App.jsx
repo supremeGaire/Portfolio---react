@@ -15,6 +15,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <main>
       <Hero />
       <AboutMe />
       <Skills />
@@ -22,7 +23,10 @@ const App = () => {
       <Portfolio />
       <Designs />
       <ContactMe />
+      </main>
+      <footer>
       <Footer />
+      </footer>
     </>
   )
 }

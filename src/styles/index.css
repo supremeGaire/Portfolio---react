@@ -60,11 +60,11 @@ button:focus-visible {
 */
 
 /* Navbar CSS */
-.logo{
+/* .logo{
   transform: translateX(-100px);
   opacity: 0;
   animation: slideInFromLeft 1s forwards;
-}
+} */
 
 @keyframes slideInFromLeft {
   to {
@@ -91,11 +91,11 @@ button:focus-visible {
   color: var(--main);
 }
 
-.navbar ul li{
+/* .navbar ul li{
   opacity: 0;
   transform: scale(0.5);
   animation: appear 1s forwards;
-}
+} */
 
 .navbar ul li{
   transition: 0.25s;
@@ -109,15 +109,15 @@ button:focus-visible {
 .download-btn{
   background-color: var(--dark);
   transition: 0.3s;
-  transform: translateX(100px);
+  /* transform: translateX(100px);
   opacity: 0;
-  animation: slideInFromRight 1s forwards;
+  animation: slideInFromRight 1s forwards; */
 }
 
 .download-btn{
   background-color: var(--main);
   color: var(--dark);
-  transform: translateX(-100px);
+  /* transform: translateX(-100px); */
 }
 
 .circle-arrow,
@@ -218,7 +218,7 @@ button:focus-visible {
   position: relative;
 }
 
-.skill-icons {
+/* .skill-icons {
   display: flex;
   animation: marquee 15s linear infinite reverse;
 }
@@ -227,7 +227,7 @@ button:focus-visible {
   flex: 0 0 12%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-icons: center;
   margin: 10px;
   color: #4A5568;
   cursor: pointer;
@@ -242,7 +242,6 @@ button:focus-visible {
   color: var(--dark);
 }
 
-/* Keyframes for the moveIcons animation */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -270,7 +269,95 @@ button:focus-visible {
 .blur-right {
   right: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+} */
+
+
+.skill-icons {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
+
+@keyframes scrollLeft {
+  to {
+    left: -180px; /* Adjust to -180px to reduce gap */
+  }
+}
+
+.skill-icon {
+  position: absolute;
+  left: max(calc(180px * 14), 100%); /* Adjust for reduced gap */
+  animation: scrollLeft 30s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Decrease width to reduce gap */
+}
+
+.icon1 {
+  animation-delay: calc(30s / 14 * (14 - 1) * -1); /* 30s / 14 * 13 * -1 */
+}
+
+.icon2 {
+  animation-delay: calc(30s / 14 * (14 - 2) * -1); /* 30s / 14 * 12 * -1 */
+}
+
+.icon3 {
+  animation-delay: calc(30s / 14 * (14 - 3) * -1); /* 30s / 14 * 11 * -1 */
+}
+
+.icon4 {
+  animation-delay: calc(30s / 14 * (14 - 4) * -1); /* 30s / 14 * 10 * -1 */
+}
+
+.icon5 {
+  animation-delay: calc(30s / 14 * (14 - 5) * -1); /* 30s / 14 * 9 * -1 */
+}
+
+.icon6 {
+  animation-delay: calc(30s / 14 * (14 - 6) * -1); /* 30s / 14 * 8 * -1 */
+}
+
+.icon7 {
+  animation-delay: calc(30s / 14 * (14 - 7) * -1); /* 30s / 14 * 7 * -1 */
+}
+
+.icon8 {
+  animation-delay: calc(30s / 14 * (14 - 8) * -1); /* 30s / 14 * 6 * -1 */
+}
+
+.icon9 {
+  animation-delay: calc(30s / 14 * (14 - 9) * -1); /* 30s / 14 * 5 * -1 */
+}
+
+.icon10 {
+  animation-delay: calc(30s / 14 * (14 - 10) * -1); /* 30s / 14 * 4 * -1 */
+}
+
+.icon11 {
+  animation-delay: calc(30s / 14 * (14 - 11) * -1); /* 30s / 14 * 3 * -1 */
+}
+
+.icon12 {
+  animation-delay: calc(30s / 14 * (14 - 12) * -1); /* 30s / 14 * 2 * -1 */
+}
+
+.icon13 {
+  animation-delay: calc(30s / 14 * (14 - 13) * -1); /* 30s / 14 * 1 * -1 */
+}
+
+.icon14 {
+  animation-delay: calc(30s / 14 * (14 - 14) * -1); /* 30s / 14 * 0 * -1 */
+}
+
 
 .skill-line-base{
   width: 80%;
