@@ -29,7 +29,7 @@ const Hero = () => {
 
       <div className="intro flex flex-col justify-between">
         <div>
-        <h1 className="text-4xl font-bold">Hello, I’m<br /><span className='text-8xl font-extrabold'>Supreme <br /> Gaire</span></h1>
+        <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold">Hello, I’m<br /><span className='text-6xl lg:text-7xl xl:text-8xl font-extrabold'>Supreme <br /> Gaire</span></h1>
         {/* <p>.............................................................</p> */}
         </div>
         <div>
@@ -43,12 +43,12 @@ const Hero = () => {
 
       <div className="hero-image relative bg-white">
         <img src={images[currentImageIndex]} alt="Supreme" className={`object-cover ${fade ? 'fade-out' : ''}`} />
-        <button className="contact-btn absolute top-56 text-white text-xl rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
+        <button className="contact-btn absolute top-56 xl:text-xl text-lg rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
           <div className="circle-arrow"></div>
           <a href="#portfolio" className="text-white py-2 px-4 rounded-full">Front End Developer</a>
         </button>
 
-        <button className="contact-btn absolute top-10 text-white text-xl rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
+        <button className="contact-btn absolute top-10 xl:text-xl text-lg rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
           <div className="circle-arrow"></div>
           <a href="#designs" className=" text-white py-2 px-4 rounded-full">Graphic Designer</a>
         </button>

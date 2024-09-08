@@ -302,6 +302,19 @@ button:focus-visible {
   width: 180px; /* Decrease width to reduce gap */
 }
 
+@media (max-width: 768px) {
+  .skill-icon {
+    width: 130px; /* Decrease width to reduce gap */
+    left: max(calc(130px * 14), 100%); /* Adjust for reduced gap */
+  }
+}
+@media (max-width: 468px) {
+  .skill-icon {
+    width: 100px; /* Decrease width to reduce gap */
+    left: max(calc(100px * 14), 100%); /* Adjust for reduced gap */
+  }
+}
+
 .icon1 {
   animation-delay: calc(30s / 14 * (14 - 1) * -1); /* 30s / 14 * 13 * -1 */
 }

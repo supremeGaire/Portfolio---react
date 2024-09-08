@@ -24,7 +24,7 @@ const Navbar = () => {
 
       {/* Navbar for larger screens */}
       <nav className="hidden md:flex flex-grow justify-center">
-        <ul className="flex space-x-8 xl:text-xl lg:text-lg text-sm">
+        <ul className="flex space-x-8 xl:text-xl lg:text-lg text-base">
           <li>
             <a href="#home" className="">
               Home
