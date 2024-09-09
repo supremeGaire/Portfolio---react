@@ -26,7 +26,7 @@ const AboutMe = () => {
     }, [quotes.length]);
 
     return (
-        <section id="about" className="pt-72 pb-14">
+        <section id="about" className="pt-56 lg:pt-64 pb-14">
             <div className="w-10/12 m-auto">
                 <h2 className="text-6xl font-bold mb-10 text-white">about me<span className="dot">.</span></h2>
                 <div className="flex flex-col md:flex-row md:space-x-20 items-center">

@@ -127,9 +127,6 @@ button:focus-visible {
   border-radius: 50%;
   background-color: var(--main);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 12px;
   transition: 0.3s;
 }
@@ -137,6 +134,9 @@ button:focus-visible {
 .download-circle-arrow{
   background-color: var(--light);
   color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle-arrow i{
@@ -155,9 +155,14 @@ button:focus-visible {
   height: 450px;
 }
 
-.hero-image img{
+.hero-image{
   width: 450px;
   height: 450px;
+}
+
+.hero-image img{
+  width: 100%;
+  height: 100%;
   transition: opacity 0.8s ease-in-out;
   opacity: 1;
 }
@@ -170,12 +175,48 @@ button:focus-visible {
   border: 6px solid var(--dark);
 }
 
+@media (max-width: 1024px) {
+  .hero-image{
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-image{
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .hero-image button:nth-child(2){
   left: -10rem;
 }
 .hero-image button:nth-child(3){
   right: -4rem;
 }
+
+@media (max-width: 640px){
+  .hero-image button:nth-child(2){
+    left: 0;
+    top: -5.5rem;
+  }
+  .hero-image button:nth-child(3){
+    right: 0;
+    top: -3.5rem;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 640px){
+  .hero-image button:nth-child(2){
+    left: -2rem;
+    top: -5rem;
+  }
+  .hero-image button:nth-child(3){
+    right: -2rem;
+    top: -5rem;
+  }
+}
+
 
 .social-media-icons i{
   background-color: var(--dark);

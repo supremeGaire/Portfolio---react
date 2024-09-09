@@ -68,22 +68,23 @@ const Career = () => {
       </h2>
 
       <h3 className="text-2xl font-bold mb-5">Education & Trainings</h3>
+      <div className="flex sm:flex-col">
       <div
         className={`relative bg-gray-100 rounded-lg shadow-lg transition-all duration-300 ease-in-out p-8 ${activeEducations.length === 1
-          ? "h-28"
+          ? "h-auto"
           : activeEducations.length === 2
-            ? "h-48"
-            : "h-64"
+            ? "h-auto"
+            : "h-auto"
           }`}
       >
         <div className="flex flex-col space-y-4 overflow-hidden">
           {Object.entries(educationData).map(([key, { time, title, institution, description }]) =>
             activeEducations.includes(key) ? (
-              <div key={key} className="flex w-full transition-opacity duration-700 ease-in-out opacity-100">
-                <div className="w-1/6">
+              <div key={key} className="md:flex w-full transition-opacity duration-700 ease-in-out opacity-100">
+                <div className="md:w-1/6 md:mb-0 mb-1">
                   <h2 className="text-lg font-bold">{time}</h2>
                 </div>
-                <div>
+                <div className="md:w-full md:ml-4 xl:ml-0">
                   <h2 className="education-title text-2xl font-bold">{title}</h2>
                   <p className="font-semibold text-slate-600">{institution}</p>
                   {/* <p className="italic">{description}</p> */}
@@ -94,17 +95,17 @@ const Career = () => {
         </div>
       </div>
 
-      <div className="mt-10 w-1/2 m-auto flex flex-col items-center">
+      <div className="sm:mt-10 w-full h-auto md:w-3/4 lg:w-1/2 m-auto flex flex-col items-center">
         <input
           type="range"
           min="2016"
           max="2024"
           value={year}
           step="0.01"
-          className="slider-bg w-full h-2 rounded-lg"
+          className="slider-bg w-full h-2 rounded-lg rotate-90 sm:rotate-0"
           onChange={handleSliderChange}
         />
-        <div className="flex justify-between text-sm font-bold w-full mt-2">
+        <div className="flex flex-col sm:flex-row justify-between text-sm font-bold w-full mt-2">
           <span>2016</span>
           <span>2017</span>
           <span>2018</span>
@@ -116,13 +117,14 @@ const Career = () => {
           <span>2024</span>
         </div>
       </div>
+      </div>
 
       <h3 className="text-2xl font-bold mb-5 mt-10">Experience</h3>
-      <div className="bg-gray-100 flex p-8 rounded-lg shadow-lg">
-        <div className="w-1/6">
+      <div className="bg-gray-100 md:flex p-8 rounded-lg shadow-lg">
+        <div className="w-1/6 md:mb-0 mb-1">
           <h2 className="text-lg font-bold">Present</h2>
         </div>
-        <div>
+        <div className="md:w-full md:ml-4 xl:ml-0">
           <div className="education-title text-2xl font-bold">
             Web Front End Developer
           </div>

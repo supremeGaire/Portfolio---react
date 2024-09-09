@@ -91,7 +91,7 @@ const Navbar = () => {
         className="hidden md:flex contact-btn relative text-white xl:text-xl lg:text-lg text-sm py-2 px-4 rounded-full space-x-4 items-center cursor-pointer"
       >
         <div>Contact Me</div>
-        <div className="circle-arrow">
+        <div className="circle-arrow flex justify-center items-center">
           <i className="fa-solid fa-arrow-right"></i>
         </div>
       </a>

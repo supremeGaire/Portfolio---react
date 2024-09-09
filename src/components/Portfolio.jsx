@@ -69,15 +69,15 @@ const Portfolio = () => {
                 </h2>
                 <div className="flex justify-between items-center">
                     <div
-                        className="text-white text-6xl cursor-pointer"
+                        className="text-white text-3xl md:text-5xl lg:text-6xl cursor-pointer"
                         onClick={handlePrev}
                     >
                         <i className="fa-solid fa-angle-left"></i>
                     </div>
                     <div className="w-10/12 m-auto mt-5">
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-                            <div className="p-8 bg-gradient-to-bl from-sky-300 to-sky-50 flex justify-around items-center shadow-md rounded-lg relative">
-                                <div className="w-1/2 space-y-2">
+                            <div className="p-8 bg-gradient-to-bl from-sky-300 to-sky-50 flex flex-col md:flex-row justify-around items-center shadow-md rounded-lg relative">
+                                <div className="w-3/4 text-center md:text-left md:w-1/2 space-y-2">
                                     <h2 className="text-6xl font-bold">{project.title}</h2>
                                     <h3 className="project-title text-4xl font-bold">
                                         {project.name}
@@ -86,7 +86,7 @@ const Portfolio = () => {
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className="project-image min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden rounded-md">
+                                <div className="project-image md:ml-4 mt-4 md:mt-0 min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden rounded-md">
                                     <h2 className="text-2xl font-bold">{project.image}</h2>
                                     <p>{project.imageDesc}</p>
                                     {project.link && (
@@ -102,7 +102,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div
-                        className="text-white text-6xl cursor-pointer"
+                        className="text-white text-3xl md:text-5xl lg:text-6xl cursor-pointer"
                         onClick={handleNext}
                     >
                         <i className="fa-solid fa-angle-right"></i>
