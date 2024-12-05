@@ -8,7 +8,7 @@ import svelteIcon from '../assets/svelte-logo.png';
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-10/12 m-auto pb-8">
+    <section id="skills" className="w-10/12 m-auto">
       <h2 className="text-6xl font-bold mb-8 text-right">skills<span className='dot'>.</span></h2>
       <div className="skills-container">
         <div className="skill-icons mt-6 mb-10"> 

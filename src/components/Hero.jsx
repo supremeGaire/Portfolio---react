@@ -25,7 +25,7 @@ const Hero = () => {
 
 
   return (
-    <section className="w-10/12 m-auto pt-5 sm:pt-10 lg:pt-20 relative z-10 flex flex-col items-center sm:items-stretch">
+    <section id="home" className="w-10/12 m-auto pt-5 sm:pt-10 lg:pt-20 relative z-10 flex flex-col items-center sm:items-stretch">
     <div className="intro flex flex-col sm:flex-row items-center sm:items-start sm:justify-between text-center sm:text-left">
         <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold">Hello, I’m<br /><span className='text-6xl lg:text-7xl xl:text-8xl font-extrabold'>Supreme <br /> Gaire</span></h1>
         <div className="hero-image relative mt-28 sm:mt-0 bg-white">
@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="social-media-icons absolute right-3 bottom-2 text-white text-xl flex space-x-2">
                 <a href="https://facebook.com/superme.gaire.1/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://instagram.com/supreme_gaire/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://x.com/supremegaire/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/supreme-gaire-a4ab01264/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/supremeGaire/" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>

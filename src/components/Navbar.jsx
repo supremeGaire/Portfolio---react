@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      id="home"
-      className="flex justify-between items-center py-8 w-10/12 m-auto text-xl font-bold"
+<div className=" sticky top-0 z-50 bg-white">
+<header
+      className="flex justify-between items-center py-6 w-10/12 m-auto text-xl font-bold"
     >
       <div className="logo flex items-center ml-2 font-bold">
         {/* <img src="/path/to/logo.png" alt="Logo" className="h-8" /> */}
@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar for larger screens */}
-      <nav className="hidden md:flex flex-grow justify-center">
+      <nav className="hidden lg:flex flex-grow justify-center">
         <ul className="flex space-x-8 xl:text-xl lg:text-lg text-base">
           <li>
             <a href="#home" className="">
@@ -45,11 +45,16 @@ const Navbar = () => {
               Portfolio
             </a>
           </li>
+          <li>
+            <a href="Games.jsx" className="">
+              Games
+            </a>
+          </li>
         </ul>
       </nav>
 
       {/* Hamburger Menu for smaller screens */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button className="text-black focus:outline-none" onClick={toggleMenu}>
           {isMenuOpen ? (
             <svg
@@ -88,7 +93,7 @@ const Navbar = () => {
       {/* Contact Button */}
       <a
         href="#contact"
-        className="hidden md:flex contact-btn relative text-white xl:text-xl lg:text-lg text-sm py-2 px-4 rounded-full space-x-4 items-center cursor-pointer"
+        className="hidden lg:flex contact-btn relative text-white xl:text-xl lg:text-lg text-sm py-2 px-4 rounded-full space-x-4 items-center cursor-pointer"
       >
         <div>Contact Me</div>
         <div className="circle-arrow flex justify-center items-center">
@@ -98,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-16 left-0 right-0 z-20 bg-white shadow-lg text-center leading-10 md:hidden transform ${
+        className={`absolute top-16 left-0 right-0 z-20 bg-white shadow-lg text-center leading-10 w-full lg:hidden transform ${
           isMenuOpen
             ? "opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
             : "opacity-0 -translate-y-full transition-all duration-500 ease-in-out pointer-events-none"
@@ -127,6 +132,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
+              <a href="Games.jsx" className="text-black">
+                Games
+              </a>
+            </li>
+            <li>
               <a
                 href="#contact"
                 className="contact-btn text-white py-2 px-4 rounded-full flex space-x-4 items-center cursor-pointer bg-blue-600 hover:bg-blue-700 transition"
@@ -141,6 +151,7 @@ const Navbar = () => {
         </nav>
       </div>
     </header>
+</div>
   );
 };
 
