@@ -357,61 +357,52 @@ button:focus-visible {
 }
 
 .icon1 {
-  animation-delay: calc(30s / 14 * (14 - 1) * -1); /* 30s / 14 * 13 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 1) * -1);
 }
 
 .icon2 {
-  animation-delay: calc(30s / 14 * (14 - 2) * -1); /* 30s / 14 * 12 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 2) * -1);
 }
 
 .icon3 {
-  animation-delay: calc(30s / 14 * (14 - 3) * -1); /* 30s / 14 * 11 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 3) * -1);
 }
 
 .icon4 {
-  animation-delay: calc(30s / 14 * (14 - 4) * -1); /* 30s / 14 * 10 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 4) * -1);
 }
 
 .icon5 {
-  animation-delay: calc(30s / 14 * (14 - 5) * -1); /* 30s / 14 * 9 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 5) * -1);
 }
 
 .icon6 {
-  animation-delay: calc(30s / 14 * (14 - 6) * -1); /* 30s / 14 * 8 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 6) * -1);
 }
 
 .icon7 {
-  animation-delay: calc(30s / 14 * (14 - 7) * -1); /* 30s / 14 * 7 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 7) * -1);
 }
 
 .icon8 {
-  animation-delay: calc(30s / 14 * (14 - 8) * -1); /* 30s / 14 * 6 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 8) * -1);
 }
 
 .icon9 {
-  animation-delay: calc(30s / 14 * (14 - 9) * -1); /* 30s / 14 * 5 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 9) * -1);
 }
 
 .icon10 {
-  animation-delay: calc(30s / 14 * (14 - 10) * -1); /* 30s / 14 * 4 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 10) * -1);
 }
 
 .icon11 {
-  animation-delay: calc(30s / 14 * (14 - 11) * -1); /* 30s / 14 * 3 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 11) * -1);
 }
 
 .icon12 {
-  animation-delay: calc(30s / 14 * (14 - 12) * -1); /* 30s / 14 * 2 * -1 */
+  animation-delay: calc(30s / 12 * (12 - 12) * -1);
 }
-
-.icon13 {
-  animation-delay: calc(30s / 14 * (14 - 13) * -1); /* 30s / 14 * 1 * -1 */
-}
-
-.icon14 {
-  animation-delay: calc(30s / 14 * (14 - 14) * -1); /* 30s / 14 * 0 * -1 */
-}
-
 
 .skill-line-base{
   width: 80%;
@@ -421,7 +412,7 @@ button:focus-visible {
 .skill-line-fd,
 .skill-line-gd,
 .skill-line-ud{
-  width: 75%;
+  width: 70%;
   height: 9px;
   background-color: var(--dark);
 }
@@ -429,7 +420,7 @@ button:focus-visible {
   width: 68%;
 }
 .skill-line-ud{
-  width: 70%;
+  width: 60%;
 }
 
 
@@ -463,6 +454,21 @@ button:focus-visible {
   transition: background-color 0.2s ease-in-out;
 }
 
+/* @media (max-width: 640px) {
+  .career-years {
+    white-space: nowrap;
+  }
+  .career-years span:not(:last-child)::after {
+    content: "•"; 
+    font-size: 14px; 
+    color: var(--main);
+    margin: 0 2px 4px 2px; 
+    display: inline-block;
+    vertical-align: middle;
+  }
+} */
+
+
 /* Portfolio CSS */
 #portfolio{
   background-color: var(--dark);
@@ -488,12 +494,10 @@ button:focus-visible {
   min-width: 160px;
 }
 
-
 .project-image:hover .project-btn {
   bottom: 15px;
   opacity: 1;
 }
-
 
 /* Contact CSS */
 .contact-form input,

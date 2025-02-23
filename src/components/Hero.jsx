@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import '../styles/index.css';
 import supremeImage1 from '../assets/img1.jpeg';
-// import supremeImage2 from '../assets/img2.jpeg';
+import supremeImage2 from '../assets/img2.jpeg';
 import supremeImage3 from '../assets/img3.jpeg';
 
 const Hero = () => {
 
-  const images = [supremeImage1, supremeImage3];
+  const images = [supremeImage1, supremeImage2, supremeImage3];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fade, setFade] = useState(false);

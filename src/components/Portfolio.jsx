@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/index.css";
+import rentalImg from "../assets/rentall.png";
+import civilHeroImg from "../assets/civilHero.png";
+import listifyImg from "../assets/listify.jpg";
 
 const projects = [
     {
@@ -7,27 +10,27 @@ const projects = [
         title: "01",
         name: "Rentall",
         description: "Rentall is a car renting web application for users to rent cars online in an easy way.",
-        image: "Rentall",
+        image: rentalImg,
         imageDesc: "A car renting app",
         link: "https://carrentall.vercel.app/",
     },
     {
         id: 2,
         title: "02",
-        name: "ToDos",
-        description: "A simple to-do list app, where users can add, edit, delete tasks and also sort them.",
-        image: "ToDos",
-        imageDesc: "A to-do list app",
-        link: "https://todoapp.vercel.com",
+        name: "Civil Hero",
+        description: "A platform connecting Service Providers, Vendors, and Customers for civil services, equipment, and materials.",
+        image: civilHeroImg,
+        imageDesc: "Civil services and products platform",
+        link: "https://civilhero.reev-it.com",
     },
     {
         id: 3,
         title: "03",
-        name: "Resume Generator",
-        description: "A resume generator app, where users can fill their information and generate a resume by choosing among various templates and download them in PDF format.",
-        image: "Resume Generator",
-        imageDesc: "A resume generator app",
-        link: "https://resumegenerator.vercel.com",
+        name: "ToDos",
+        description: "A simple to-do list app, where users can add, edit, delete tasks and also sort them.",
+        image: listifyImg,
+        imageDesc: "A to-do list app",
+        link: "https://listify-rosy-eight.vercel.app/",
     },
 ];
 
@@ -52,8 +55,6 @@ const Portfolio = () => {
 
     useEffect(() => {
         document.addEventListener("keydown", handleKeyPress);
-
-        // Cleanup event listener on component unmount
         return () => {
             document.removeEventListener("keydown", handleKeyPress);
         };
@@ -76,7 +77,7 @@ const Portfolio = () => {
                     </div>
                     <div className="w-10/12 m-auto mt-5">
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-                            <div className="p-8 bg-gradient-to-bl from-sky-300 to-sky-50 flex flex-col md:flex-row justify-around items-center shadow-md rounded-lg relative">
+                            <div className="p-5 md:p-8 bg-gradient-to-bl from-sky-300 to-sky-50 flex flex-col md:flex-row justify-around items-center shadow-md rounded-lg relative">
                                 <div className="w-3/4 text-center md:text-left md:w-1/2 space-y-2">
                                     <h2 className="text-6xl font-bold">{project.title}</h2>
                                     <h3 className="project-title text-4xl font-bold">
@@ -86,13 +87,17 @@ const Portfolio = () => {
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className="project-image md:ml-4 mt-4 md:mt-0 min-w-48 min-h-48 p-4 bg-gradient-to-tr from-sky-300 to-sky-500 flex flex-col justify-center items-center relative overflow-hidden rounded-md">
-                                    <h2 className="text-2xl font-bold">{project.image}</h2>
-                                    <p>{project.imageDesc}</p>
+                                <div className="project-image md:ml-4 mt-4 md:mt-0 w-48 h-48 p-2 border-4 border-sky-300 shadow-lg shadow-sky-700 flex justify-center items-center relative overflow-hidden rounded-lg text-center bg-sky-100">
+                                    <img
+                                        src={project.image}
+                                        alt={project.imageDesc}
+                                        className="w-full h-full object-cover rounded-md"
+                                    />
+
                                     {project.link && (
                                         <button className="project-btn text-white py-2 px-3 rounded-full flex items-center justify-center cursor-pointer">
                                             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                                            <div className="circle-arrow ml-1 h-4 w-4">
+                                            <div className="circle-arrow ml-1 h-4 w-4 flex items-center justify-center">
                                                 <i className="fa-solid fa-arrow-right text-sm"></i>
                                             </div>
                                         </button>
@@ -114,3 +119,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
+
