@@ -45,11 +45,11 @@ const Navbar = () => {
               Portfolio
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="Games.jsx" className="">
               Games
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
 
@@ -131,11 +131,11 @@ const Navbar = () => {
                 Portfolio
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="Games.jsx" className="text-black">
                 Games
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#contact"

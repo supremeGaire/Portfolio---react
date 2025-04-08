@@ -37,6 +37,10 @@ body {
   color: var(--dark);
 }
 
+.blue-bg{
+  background-color: var(--main);
+}
+
 /*
 
 button:focus,

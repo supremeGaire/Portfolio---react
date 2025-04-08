@@ -36,7 +36,7 @@ const Hero = () => {
             </button>
             <button className="contact-btn absolute top-0 sm:top-10 text-base lg:text-xl rounded-full flex items-center border-2 border-gray-600 cursor-pointer">
                 <div className="circle-arrow hidden md:block"></div>
-                <a href="#designs" className=" text-white py-2 px-4 rounded-full">Graphic Designer</a>
+                <a href="#designs" className=" text-white py-2 px-4 rounded-full">UI/UX Designer</a>
             </button>
             <div className="social-media-icons absolute right-3 bottom-2 text-white text-xl flex space-x-2">
                 <a href="https://facebook.com/superme.gaire.1/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
