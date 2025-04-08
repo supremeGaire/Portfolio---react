@@ -23,7 +23,7 @@ return (
             <div className="hidden xl:block rotate-180">
                 <img src={arrow} alt="arrow" className="w-60" />
             </div>
-            <img src={wavingHello} alt="Supreme" className="w-52 lg:w-60 transform scale-x-[-1] hidden md:block md:ml-7 xl:ml-0" />
+            <img src={wavingHello} alt="Supreme Gaire waving hello" className="w-52 lg:w-60 transform scale-x-[-1] hidden md:block md:ml-7 xl:ml-0" />
         </div>
     </div>
 </section>
